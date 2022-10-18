@@ -25,6 +25,14 @@ class board:
                 result.append(cell)
                 
         return result
+
+    def findAllFilledCells(self):
+        result = []
+        for cell in range(0, len(self.values)):
+            if self.values[cell] > 0:
+                result.append(cell)
+
+        return result
     
     def getValueAt(self, idx: int) -> str:
         if idx < len(self.values):
@@ -96,7 +104,6 @@ class board:
     def coordToCell(self, row: int, col: int):
         return (row * self.w) + col
         
-
     def getCellAtDir(self, fromPoint: int, toX: int, toY: int):
         asCoord = self.cellToCoord(fromPoint)
         asCoord[0] += toY

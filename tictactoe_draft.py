@@ -96,6 +96,8 @@ startBoard.setCellValue(startBoard.coordToCell(2, 3), X) #coordinate (2,3) is ba
 startBoard.setCellValue(startBoard.coordToCell(2, 2), O) #coordinate (2,3) is basically (3,4) because our start point is (0,0)
 drawBoardValues(startBoard)
 
+print(startBoard.cellToCoord(15))
+
 game = state(startBoard)
 game = expandState(False, game, 1)
 

@@ -29,7 +29,7 @@ class board:
     def findAllFilledCells(self):
         result = []
         for cell in range(0, len(self.values)):
-            if self.values[cell] > 0:
+            if self.values[cell] != boardSign.EMPTY:
                 result.append(cell)
 
         return result

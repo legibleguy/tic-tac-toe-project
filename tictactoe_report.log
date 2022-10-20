@@ -1,0 +1,228 @@
+Starting the game of Tic-Tac-Toe 
+Initial state: 
+
+|   |	|   |	|   |	|   |	|   |	|   |	
+|   |	|   |	|   |	|   |	|   |	|   |	
+|   |	|   |	| O |	| X |	|   |	|   |	
+|   |	|   |	|   |	|   |	|   |	|   |	
+|   |	|   |	|   |	|   |	|   |	|   |	
+
+
+X's turn
+CPU execution time: 0.014 seconds
+138 nodes generated
+|   |	|   |	|   |	|   |	|   |	|   |	
+|   |	| X |	|   |	|   |	|   |	|   |	
+|   |	|   |	| O |	| X |	|   |	|   |	
+|   |	|   |	|   |	|   |	|   |	|   |	
+|   |	|   |	|   |	|   |	|   |	|   |	
+
+
+
+
+O's turn
+CPU execution time: 10.9582 seconds
+59276 nodes generated
+| O |	|   |	|   |	|   |	|   |	|   |	
+|   |	| X |	|   |	|   |	|   |	|   |	
+|   |	|   |	| O |	| X |	|   |	|   |	
+|   |	|   |	|   |	|   |	|   |	|   |	
+|   |	|   |	|   |	|   |	|   |	|   |	
+
+
+
+
+X's turn
+CPU execution time: 0.0299 seconds
+198 nodes generated
+| O |	|   |	|   |	|   |	|   |	|   |	
+|   |	| X |	|   |	|   |	|   |	|   |	
+|   |	|   |	| O |	| X |	|   |	|   |	
+|   |	| X |	|   |	|   |	|   |	|   |	
+|   |	|   |	|   |	|   |	|   |	|   |	
+
+
+
+
+O's turn
+CPU execution time: 19.0768 seconds
+77300 nodes generated
+| O |	|   |	|   |	|   |	|   |	|   |	
+|   |	| X |	|   |	|   |	|   |	|   |	
+| O |	|   |	| O |	| X |	|   |	|   |	
+|   |	| X |	|   |	|   |	|   |	|   |	
+|   |	|   |	|   |	|   |	|   |	|   |	
+
+
+
+
+X's turn
+CPU execution time: 0.0677 seconds
+246 nodes generated
+| O |	|   |	| X |	|   |	|   |	|   |	
+|   |	| X |	|   |	|   |	|   |	|   |	
+| O |	|   |	| O |	| X |	|   |	|   |	
+|   |	| X |	|   |	|   |	|   |	|   |	
+|   |	|   |	|   |	|   |	|   |	|   |	
+
+
+
+
+O's turn
+CPU execution time: 11.0469 seconds
+57851 nodes generated
+| O |	|   |	| X |	|   |	|   |	|   |	
+|   |	| X |	|   |	|   |	|   |	|   |	
+| O |	|   |	| O |	| X |	|   |	|   |	
+|   |	| X |	|   |	|   |	|   |	|   |	
+| O |	|   |	|   |	|   |	|   |	|   |	
+
+
+
+
+X's turn
+CPU execution time: 0.0312 seconds
+214 nodes generated
+| O |	|   |	| X |	|   |	|   |	|   |	
+|   |	| X |	|   |	|   |	|   |	|   |	
+| O |	|   |	| O |	| X |	| X |	|   |	
+|   |	| X |	|   |	|   |	|   |	|   |	
+| O |	|   |	|   |	|   |	|   |	|   |	
+
+
+
+
+O's turn
+CPU execution time: 15.1813 seconds
+66148 nodes generated
+| O |	|   |	| X |	|   |	|   |	|   |	
+|   |	| X |	|   |	|   |	|   |	|   |	
+| O |	|   |	| O |	| X |	| X |	|   |	
+|   |	| X |	|   |	|   |	|   |	|   |	
+| O |	| O |	|   |	|   |	|   |	|   |	
+
+
+
+
+X's turn
+CPU execution time: 0.0375 seconds
+240 nodes generated
+| O |	|   |	| X |	|   |	|   |	|   |	
+|   |	| X |	|   |	|   |	|   |	|   |	
+| O |	|   |	| O |	| X |	| X |	|   |	
+|   |	| X |	| X |	|   |	|   |	|   |	
+| O |	| O |	|   |	|   |	|   |	|   |	
+
+
+
+
+O's turn
+CPU execution time: 11.4615 seconds
+48067 nodes generated
+| O |	|   |	| X |	|   |	|   |	|   |	
+|   |	| X |	|   |	|   |	|   |	|   |	
+| O |	|   |	| O |	| X |	| X |	| O |	
+|   |	| X |	| X |	|   |	|   |	|   |	
+| O |	| O |	|   |	|   |	|   |	|   |	
+
+
+
+
+X's turn
+CPU execution time: 0.0391 seconds
+208 nodes generated
+| O |	|   |	| X |	| X |	|   |	|   |	
+|   |	| X |	|   |	|   |	|   |	|   |	
+| O |	|   |	| O |	| X |	| X |	| O |	
+|   |	| X |	| X |	|   |	|   |	|   |	
+| O |	| O |	|   |	|   |	|   |	|   |	
+
+
+
+
+O's turn
+CPU execution time: 9.6833 seconds
+34057 nodes generated
+| O |	|   |	| X |	| X |	|   |	|   |	
+|   |	| X |	|   |	| O |	|   |	|   |	
+| O |	|   |	| O |	| X |	| X |	| O |	
+|   |	| X |	| X |	|   |	|   |	|   |	
+| O |	| O |	|   |	|   |	|   |	|   |	
+
+
+
+
+X's turn
+CPU execution time: 0.0516 seconds
+178 nodes generated
+| O |	|   |	| X |	| X |	|   |	|   |	
+|   |	| X |	|   |	| O |	|   |	|   |	
+| O |	|   |	| O |	| X |	| X |	| O |	
+|   |	| X |	| X |	|   |	|   |	| X |	
+| O |	| O |	|   |	|   |	|   |	|   |	
+
+
+
+
+O's turn
+CPU execution time: 10.1874 seconds
+28504 nodes generated
+| O |	|   |	| X |	| X |	|   |	|   |	
+|   |	| X |	|   |	| O |	|   |	|   |	
+| O |	|   |	| O |	| X |	| X |	| O |	
+|   |	| X |	| X |	|   |	|   |	| X |	
+| O |	| O |	|   |	| O |	|   |	|   |	
+
+
+
+
+X's turn
+CPU execution time: 0.0486 seconds
+172 nodes generated
+| O |	|   |	| X |	| X |	|   |	|   |	
+|   |	| X |	|   |	| O |	|   |	| X |	
+| O |	|   |	| O |	| X |	| X |	| O |	
+|   |	| X |	| X |	|   |	|   |	| X |	
+| O |	| O |	|   |	| O |	|   |	|   |	
+
+
+
+
+O's turn
+CPU execution time: 5.3894 seconds
+16041 nodes generated
+| O |	|   |	| X |	| X |	|   |	|   |	
+|   |	| X |	|   |	| O |	|   |	| X |	
+| O |	|   |	| O |	| X |	| X |	| O |	
+|   |	| X |	| X |	|   |	| O |	| X |	
+| O |	| O |	|   |	| O |	|   |	|   |	
+
+
+
+
+X's turn
+CPU execution time: 0.0409 seconds
+144 nodes generated
+| O |	|   |	| X |	| X |	|   |	| X |	
+|   |	| X |	|   |	| O |	|   |	| X |	
+| O |	|   |	| O |	| X |	| X |	| O |	
+|   |	| X |	| X |	|   |	| O |	| X |	
+| O |	| O |	|   |	| O |	|   |	|   |	
+
+
+
+
+O's turn
+CPU execution time: 2.2087 seconds
+6065 nodes generated
+| O |	|   |	| X |	| X |	|   |	| X |	
+|   |	| X |	|   |	| O |	|   |	| X |	
+| O |	|   |	| O |	| X |	| X |	| O |	
+|   |	| X |	| X |	|   |	| O |	| X |	
+| O |	| O |	| O |	| O |	|   |	|   |	
+
+
+
+
+O is the winner
+Total game time: 95.5558 seconds

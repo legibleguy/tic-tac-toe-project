@@ -1,4 +1,6 @@
 import time
+import sys #this is just to log the prints into a file
+
 from copy import deepcopy
 from graph import board, boardSign
 from graphDebug import drawBoardValues
@@ -143,8 +145,16 @@ class Game:
         if self.playersTurn: return SEARCH_DEPTH_X
         else: return SEARCH_DEPTH_O
     
-    def run_game(self):
+    def run_game(self, logIntoFile = True):
+        if logIntoFile:
+            print("Game reports will be stored in tictactoe_report.log")
+            old_stdout = sys.stdout
+            log_file = open("tictactoe_report.log","w")
+            sys.stdout = log_file
+
         gameStartTime = time.time()
+
+        print("Starting the game of Tic-Tac-Toe \nInitial state: \n")
         drawBoardValues(self.currentState.currentBoard)
         while not self.currentState.is_terminal():
 
@@ -155,20 +165,26 @@ class Game:
 
             minimaxStartTime = time.time()
             self.currentState = self.minimax(self.playersTurn, self.currentState, 0)
-            print("CPU execution time: " + str(time.time() - minimaxStartTime) + " seconds")
+            print("CPU execution time: " + str(round(time.time() - minimaxStartTime, 4)) + " seconds")
             self.to_move()
 
             print(str(self.__numStatesGenerated) + " nodes generated")
             self.__numStatesGenerated = 0
             drawBoardValues(self.currentState.currentBoard)
             print("\n")
-            
         
         winner = self.get_winner()
         if winner == None: print("\nIt's a tie")
         else: print("\n" + winner + " is the winner")
 
-        print("Total game time: " + str(time.time() - gameStartTime) + " seconds")
+        print("Total game time: " + str(round(time.time() - gameStartTime, 4)) + " seconds")
+
+        if logIntoFile:
+            sys.stdout = old_stdout
+            log_file.close()
+            print("Game is finished, check the log file")
+
+        
 
 def make_move(inGame: Game, row: int, col: int, sign: boardSign):
     asIndex = inGame.currentState.currentBoard.coord_to_cell(row, col)

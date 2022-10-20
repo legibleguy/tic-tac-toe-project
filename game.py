@@ -1,5 +1,5 @@
 import time
-import sys #this is just to log the prints into a file
+import sys #this will be used to log the prints into a separate file
 
 from copy import deepcopy
 from graph import board, boardSign
@@ -20,23 +20,24 @@ class gameState:
         self.move = newMove #remembering the move to compare it with another state's move in case of a tie
         self.heuristic = self.__determine_heuristic()
     
-    def get_last_move_sign(self):
+    def __get_last_move_sign(self):
         if self.move != -1:
             return self.currentBoard.values[self.move]
-        else: return X #if last move is unknown, we'll just return X as a player sign by default
+        else: return X #if last move is unknown, we'll just return X as player's sign by default
     
-    def get_last_move_sign_opponent(self):
+    def __get_last_move_sign_opponent(self):
         if self.move != -1:
             if self.currentBoard.values[self.move] == X:
                 return O
             else: return X
-        else: return O #if last move is unknown, we'll just return O as an opponent sign by default
+        else: return O #if last move is unknown, we'll just return O as opponent's sign by default
 
-    #if isPlayersTurn is true, we'll be looking for a best solution for X (and vice versa if it's opponent's turn)
     def __determine_heuristic(self):
 
-        mySign = self.get_last_move_sign()
-        theirSign = self.get_last_move_sign_opponent()
+        if self.is_terminal(): return self.__utility()
+
+        mySign = self.__get_last_move_sign()
+        theirSign = self.__get_last_move_sign_opponent()
         
         return (
             200 * self.currentBoard.get_num_open_sequences(3, 2, mySign) - 
@@ -49,15 +50,14 @@ class gameState:
             2 * self.currentBoard.get_num_open_sequences(2, 1, theirSign)
         )
     
-    #Returns true if the game is over
+    #Returns true if the game is over in this state
     def is_terminal(self) -> bool:
-        return self.utility() == MAXINT or self.utility() == MININT or self.utility() == 0
+        return self.__utility() == MAXINT or self.__utility() == MININT or self.__utility() == 0
         
-    def utility(self):
-
+    def __utility(self):
         for s in self.currentBoard.sequences:
             if len(s) >= WIN_SIZE:
-                if self.currentBoard.values[s[0]] == self.get_last_move_sign():
+                if self.currentBoard.values[s[0]] == self.__get_last_move_sign():
                     return MAXINT
                 else:
                     return MININT
@@ -66,7 +66,7 @@ class gameState:
         return None
     
     #Will travers through all previous moves and find adjacent cells
-    #Those adjacent cells represent currently available actions
+    #Those adjacent cells represent currently available __actions
     def actions(self):
         actions = []
         for cell in self.currentBoard.find_all_filled_cells():
@@ -81,7 +81,7 @@ class gameState:
 
 class Game:
     def __init__(self, boardW, boardH) -> None:
-        self.playersTurn = True
+        self.__playingAsX = True
         self.__numStatesGenerated = 0
 
         startBoard = board(boardW, boardH)
@@ -94,14 +94,14 @@ class Game:
         return None
 
     #Determines which player goes next
-    def to_move(self):
-        if  self.playersTurn == True:
-            self.playersTurn = False #Min player's turn
+    def __to_move(self):
+        if  self.__playingAsX == True:
+            self.__playingAsX = False #Min player's turn
         else:
-            self.playersTurn = True #Max player's turn
+            self.__playingAsX = True #Max player's turn
     
     def minimax(self, isPredictingX: bool, state: gameState, depth: int) -> gameState:
-        if state.is_terminal() or depth >= self.get_current_depth_limit():
+        if state.is_terminal() or depth >= self.__get_current_depth_limit():
             return state
 
         signToUse: boardSign
@@ -126,7 +126,6 @@ class Game:
                     bestState = stateToTest
                     stateToReturn = nextMoveState
                 else:
-                    
                     if stateToTest.heuristic > bestState.heuristic:
                         bestState = stateToTest
                         stateToReturn = nextMoveState
@@ -141,13 +140,14 @@ class Game:
                             
         return stateToReturn
     
-    def get_current_depth_limit(self):
-        if self.playersTurn: return SEARCH_DEPTH_X
+    def __get_current_depth_limit(self):
+        if self.__playingAsX: return SEARCH_DEPTH_X
         else: return SEARCH_DEPTH_O
     
     def run_game(self, logIntoFile = True):
         if logIntoFile:
             print("Game reports will be stored in tictactoe_report.log")
+            print("Now give the AI some time to play")
             old_stdout = sys.stdout
             log_file = open("tictactoe_report.log","w")
             sys.stdout = log_file
@@ -158,20 +158,24 @@ class Game:
         drawBoardValues(self.currentState.currentBoard)
         while not self.currentState.is_terminal():
 
-            if self.playersTurn:
+            if self.__playingAsX:
                 print("\nX's turn")
             else:
                 print("\nO's turn")
 
+            #making the best move with the minimax algorithm
             minimaxStartTime = time.time()
-            self.currentState = self.minimax(self.playersTurn, self.currentState, 0)
+            self.currentState = self.minimax(self.__playingAsX, self.currentState, 0)
             print("CPU execution time: " + str(round(time.time() - minimaxStartTime, 4)) + " seconds")
-            self.to_move()
 
+            #the summary of this turn
             print(str(self.__numStatesGenerated) + " nodes generated")
             self.__numStatesGenerated = 0
             drawBoardValues(self.currentState.currentBoard)
             print("\n")
+
+            #ending this turn
+            self.__to_move()
         
         winner = self.get_winner()
         if winner == None: print("\nIt's a tie")
@@ -185,7 +189,6 @@ class Game:
             print("Game is finished, check the log file")
 
         
-
 def make_move(inGame: Game, row: int, col: int, sign: boardSign):
     asIndex = inGame.currentState.currentBoard.coord_to_cell(row, col)
     inGame.currentState.currentBoard.set_cell_value(asIndex, sign)

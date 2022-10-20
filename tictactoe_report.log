@@ -9,7 +9,7 @@ Initial state:
 
 
 X's turn
-CPU execution time: 0.0188 seconds
+CPU execution time: 0.0274 seconds
 138 nodes generated
 |   |	|   |	|   |	|   |	|   |	|   |	
 |   |	| X |	|   |	|   |	|   |	|   |	
@@ -21,7 +21,7 @@ CPU execution time: 0.0188 seconds
 
 
 O's turn
-CPU execution time: 9.5665 seconds
+CPU execution time: 12.7829 seconds
 59276 nodes generated
 | O |	|   |	|   |	|   |	|   |	|   |	
 |   |	| X |	|   |	|   |	|   |	|   |	
@@ -33,7 +33,7 @@ CPU execution time: 9.5665 seconds
 
 
 X's turn
-CPU execution time: 0.0239 seconds
+CPU execution time: 0.0328 seconds
 198 nodes generated
 | O |	|   |	|   |	|   |	|   |	|   |	
 |   |	| X |	|   |	|   |	|   |	|   |	
@@ -45,7 +45,7 @@ CPU execution time: 0.0239 seconds
 
 
 O's turn
-CPU execution time: 11.2609 seconds
+CPU execution time: 13.734 seconds
 77300 nodes generated
 | O |	|   |	|   |	|   |	|   |	|   |	
 |   |	| X |	|   |	|   |	|   |	|   |	
@@ -57,7 +57,7 @@ CPU execution time: 11.2609 seconds
 
 
 X's turn
-CPU execution time: 0.0306 seconds
+CPU execution time: 0.0475 seconds
 246 nodes generated
 | O |	|   |	| X |	|   |	|   |	|   |	
 |   |	| X |	|   |	|   |	|   |	|   |	
@@ -69,7 +69,7 @@ CPU execution time: 0.0306 seconds
 
 
 O's turn
-CPU execution time: 11.5383 seconds
+CPU execution time: 12.449 seconds
 57851 nodes generated
 | O |	|   |	| X |	|   |	|   |	|   |	
 |   |	| X |	|   |	|   |	|   |	|   |	
@@ -81,7 +81,7 @@ CPU execution time: 11.5383 seconds
 
 
 X's turn
-CPU execution time: 0.0311 seconds
+CPU execution time: 0.0371 seconds
 214 nodes generated
 | O |	|   |	| X |	|   |	|   |	|   |	
 |   |	| X |	|   |	|   |	|   |	|   |	
@@ -93,7 +93,7 @@ CPU execution time: 0.0311 seconds
 
 
 O's turn
-CPU execution time: 15.3985 seconds
+CPU execution time: 16.7762 seconds
 66148 nodes generated
 | O |	|   |	| X |	|   |	|   |	|   |	
 |   |	| X |	|   |	|   |	|   |	|   |	
@@ -105,7 +105,7 @@ CPU execution time: 15.3985 seconds
 
 
 X's turn
-CPU execution time: 0.0477 seconds
+CPU execution time: 0.056 seconds
 300 nodes generated
 | O |	|   |	| X |	|   |	|   |	|   |	
 |   |	| X |	|   |	|   |	|   |	|   |	
@@ -117,7 +117,7 @@ CPU execution time: 0.0477 seconds
 
 
 O's turn
-CPU execution time: 15.4427 seconds
+CPU execution time: 24.5096 seconds
 69537 nodes generated
 | O |	| O |	| X |	|   |	|   |	|   |	
 |   |	| X |	|   |	|   |	|   |	|   |	
@@ -129,7 +129,7 @@ CPU execution time: 15.4427 seconds
 
 
 X's turn
-CPU execution time: 0.0598 seconds
+CPU execution time: 0.0611 seconds
 262 nodes generated
 | O |	| O |	| X |	|   |	|   |	|   |	
 |   |	| X |	|   |	|   |	|   |	|   |	
@@ -141,7 +141,7 @@ CPU execution time: 0.0598 seconds
 
 
 O's turn
-CPU execution time: 12.0863 seconds
+CPU execution time: 13.6464 seconds
 41811 nodes generated
 | O |	| O |	| X |	| O |	|   |	|   |	
 |   |	| X |	|   |	|   |	|   |	|   |	
@@ -153,7 +153,7 @@ CPU execution time: 12.0863 seconds
 
 
 X's turn
-CPU execution time: 0.0478 seconds
+CPU execution time: 0.0552 seconds
 228 nodes generated
 | O |	| O |	| X |	| O |	| X |	|   |	
 |   |	| X |	|   |	|   |	|   |	|   |	
@@ -165,7 +165,7 @@ CPU execution time: 0.0478 seconds
 
 
 O's turn
-CPU execution time: 10.5171 seconds
+CPU execution time: 12.9548 seconds
 35403 nodes generated
 | O |	| O |	| X |	| O |	| X |	|   |	
 |   |	| X |	|   |	|   |	|   |	| O |	
@@ -177,7 +177,7 @@ CPU execution time: 10.5171 seconds
 
 
 X's turn
-CPU execution time: 0.0457 seconds
+CPU execution time: 0.0503 seconds
 196 nodes generated
 | O |	| O |	| X |	| O |	| X |	| X |	
 |   |	| X |	|   |	|   |	|   |	| O |	
@@ -189,7 +189,7 @@ CPU execution time: 0.0457 seconds
 
 
 O's turn
-CPU execution time: 6.2759 seconds
+CPU execution time: 7.6053 seconds
 18605 nodes generated
 | O |	| O |	| X |	| O |	| X |	| X |	
 |   |	| X |	|   |	|   |	|   |	| O |	
@@ -201,7 +201,7 @@ CPU execution time: 6.2759 seconds
 
 
 X's turn
-CPU execution time: 0.0397 seconds
+CPU execution time: 0.0963 seconds
 144 nodes generated
 | O |	| O |	| X |	| O |	| X |	| X |	
 |   |	| X |	|   |	|   |	|   |	| O |	
@@ -213,7 +213,7 @@ CPU execution time: 0.0397 seconds
 
 
 O's turn
-CPU execution time: 3.3389 seconds
+CPU execution time: 4.8312 seconds
 8455 nodes generated
 | O |	| O |	| X |	| O |	| X |	| X |	
 |   |	| X |	|   |	| O |	|   |	| O |	
@@ -225,7 +225,7 @@ CPU execution time: 3.3389 seconds
 
 
 X's turn
-CPU execution time: 0.0323 seconds
+CPU execution time: 0.0678 seconds
 100 nodes generated
 | O |	| O |	| X |	| O |	| X |	| X |	
 |   |	| X |	|   |	| O |	|   |	| O |	
@@ -237,7 +237,7 @@ CPU execution time: 0.0323 seconds
 
 
 O's turn
-CPU execution time: 1.7667 seconds
+CPU execution time: 2.5402 seconds
 3273 nodes generated
 | O |	| O |	| X |	| O |	| X |	| X |	
 |   |	| X |	|   |	| O |	|   |	| O |	
@@ -249,7 +249,7 @@ CPU execution time: 1.7667 seconds
 
 
 X's turn
-CPU execution time: 0.033 seconds
+CPU execution time: 0.0451 seconds
 64 nodes generated
 | O |	| O |	| X |	| O |	| X |	| X |	
 | X |	| X |	|   |	| O |	|   |	| O |	
@@ -261,7 +261,7 @@ CPU execution time: 0.033 seconds
 
 
 O's turn
-CPU execution time: 0.6138 seconds
+CPU execution time: 1.133 seconds
 979 nodes generated
 | O |	| O |	| X |	| O |	| X |	| X |	
 | X |	| X |	| O |	| O |	|   |	| O |	
@@ -273,7 +273,7 @@ CPU execution time: 0.6138 seconds
 
 
 X's turn
-CPU execution time: 0.014 seconds
+CPU execution time: 0.148 seconds
 36 nodes generated
 | O |	| O |	| X |	| O |	| X |	| X |	
 | X |	| X |	| O |	| O |	| X |	| O |	
@@ -285,7 +285,7 @@ CPU execution time: 0.014 seconds
 
 
 O's turn
-CPU execution time: 0.0706 seconds
+CPU execution time: 0.1188 seconds
 129 nodes generated
 | O |	| O |	| X |	| O |	| X |	| X |	
 | X |	| X |	| O |	| O |	| X |	| O |	
@@ -297,4 +297,4 @@ CPU execution time: 0.0706 seconds
 
 
 O is the winner
-Total game time: 98.3025 seconds
+Total game time: 123.8084 seconds

@@ -1,3 +1,7 @@
+#This will contain the board class. Board contains information about its cells that can have either 
+#X, O, or nothing in them
+#After every move the board class checks if there are any sequences and stores those in a separate variable
+
 from enum import Enum
 
 class boardSign(Enum):
@@ -89,7 +93,7 @@ class board:
         for i in reversed(range(0, len(toRemove))):
             self.sequences.pop(toRemove[i])
 
-    
+    #Checks if given sequence is Vertical, Horizontal, or Diagonal 
     def __get_sequence_direction(self, seqIdx: int) -> int:
         lastIdx = len(self.sequences[seqIdx])-1
         maxIdx = max(self.sequences[seqIdx][lastIdx], self.sequences[seqIdx][lastIdx-1])
@@ -110,6 +114,7 @@ class board:
         elif asCoord[1] < 0 or asCoord[1] >= self.w: return -1
         else: return self.coord_to_cell(asCoord[0], asCoord[1])
     
+    #Returns the number of open sides for a given sequence by index from an array of sequences
     def sequence_num_open_sides(self, seqIdx: int) -> int:
         numOpen = 0
         seq = self.sequences[seqIdx]
@@ -130,6 +135,7 @@ class board:
         
         return numOpen
     
+    #Returns the num of sequences that have open ends equal to numOpen and a length equal to seqLen
     def get_num_open_sequences(self, seqLen: int, numOpen: int, withSign):
         result = 0
         for i in range(0, len(self.sequences)):

@@ -15,7 +15,7 @@ def drawBoardValues(inBoard: board):
     toPrint = ""
     for y in range(0, inBoard.h):
         for x in range(0, inBoard.w):
-            toPrint += "| " + str(inBoard.getValueAt(count)) + " |\t"
+            toPrint += "| " + str(inBoard.get_value_at(count)) + " |\t"
             count += 1
         toPrint += "\n"
     print(toPrint)
